@@ -50,7 +50,7 @@
     <workerType>${cloudhub.worker}</workerType>
 			    <objectStoreV2>true</objectStoreV2>
 			    <properties>
-  <host>db4free.net</key>
+  <host>db4free.net</host>
 </properties>
 </cloudHubDeployment>
 
