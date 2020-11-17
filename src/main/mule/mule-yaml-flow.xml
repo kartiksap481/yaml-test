@@ -12,7 +12,6 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<db:config name="Database_Config" doc:name="Database Config" doc:id="98ff463d-bdfa-49cc-afcc-b62296e626ff" >
 		<db:my-sql-connection host="${host}" port="${port}" user="${user}" password="${password}" database="${database}" />
 	</db:config>
-	<configuration-properties doc:name="Configuration properties" doc:id="b6a4b0f4-3477-4e53-8182-d1b27607dc66" file="auth.yaml" />
 	<flow name="mule-yaml-flowFlow" doc:id="b87a9ffb-a37f-436b-a9f7-72c73f663659" >
 		<http:listener doc:name="Listener" doc:id="02d064e6-3324-4f8a-a47c-f0bf9e88db48" config-ref="HTTP_Listener_config" path="/yaml"/>
 		<db:select doc:name="Select" doc:id="afc7889d-8469-4433-8779-f1a4477fece5" config-ref="Database_Config">
