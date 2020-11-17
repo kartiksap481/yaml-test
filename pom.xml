@@ -51,6 +51,10 @@
 			    <objectStoreV2>true</objectStoreV2>
 			    <properties>
   <host>${env.host}</host>
+				    <user>${env.user}</user>
+				    <password>${env.password}</password>
+				    <database>${env.database}</database>
+				    <port>${env.port}</port>
 </properties>
 </cloudHubDeployment>
 
