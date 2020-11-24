@@ -16,7 +16,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<flow name="mule-yaml-flowFlow" doc:id="b87a9ffb-a37f-436b-a9f7-72c73f663659" >
 		<http:listener doc:name="Listener" doc:id="02d064e6-3324-4f8a-a47c-f0bf9e88db48" config-ref="HTTP_Listener_config" path="/yaml"/>
 		<db:select doc:name="Select" doc:id="afc7889d-8469-4433-8779-f1a4477fece5" config-ref="Database_Config">
-			<db:sql ><![CDATA[seelct * from CUSTOMERS]]></db:sql>
+			<db:sql ><![CDATA[select * from CUSTOMERS]]></db:sql>
 		</db:select>
 		<ee:transform doc:name="Transform Message" doc:id="88a483e3-bb9c-48fa-8828-05a3fabdee4e" >
 			<ee:message >
